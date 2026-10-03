@@ -112,12 +112,15 @@ The analysis addresses six key business questions:
 - Completion rates remained around **95–96%** during most of the period but deteriorated during **April–June 2024** and **April–June 2025**.
 - **May 2025** was the most notable stress period, with completion falling to approximately **90%** while the network handled its highest monthly swap volume.
 - The pattern indicates periods of operational stress as network demand increased.
+![Q1 Network Performance](assets/Q1_monthly_swap_performance.png)
 
 ### Q2 — Service Failures & Customer Experience
 - `failed_no_charged_battery` was the largest unsuccessful-swap category, accounting for approximately **3.47% of all swap attempts**.
 - `abandoned_queue` was the second-largest failure category at approximately **1.77%**.
 - Queue abandonment was strongly associated with longer waiting times: the median wait was **648 seconds (10.8 minutes)** for abandoned swaps versus **209 seconds (3.5 minutes)** for completed swaps.
 - The two major operational themes identified were **battery availability** and **queue/service capacity**.
+![Q2 Failure Composition](assets/Q2_failure_composition.png)
+![Q2 Queue Wait by Outcome](assets/Q2_queue_wait_by_outcome.png)
 
 ### Q3 — Station & Geographic Patterns
 - **STN-BLR-019** recorded the highest swap-attempt volume at approximately **58,067 attempts**.
@@ -125,6 +128,7 @@ The analysis addresses six key business questions:
 - **STN-JAI-141** recorded the lowest completion rate among the top ten busiest stations at approximately **91.27%** and had a battery-unavailability failure rate of approximately **5.43%**.
 - Battery-unavailability failure volume was highest at **STN-JAI-138 (2,635)**, followed by **STN-DEL-043 (2,611)**, **STN-HYD-072 (2,530)** and **STN-DEL-050 (2,513)**.
 - The analysis indicates that operational hotspots are better identified by combining **demand, completion performance and battery availability** rather than looking at station volume alone.
+![Q3 Battery Failure Hotspots](assets/Q3_battery_failure_hotspots.png)
 
 ### Q4 — Battery & Equipment Performance
 - Completed swaps entering with **0–20% SOC** required approximately **2.09 kWh**, compared with **1.80 kWh** for the 20–40% SOC group.
@@ -133,6 +137,7 @@ The analysis addresses six key business questions:
 - Average energy requirement increased from approximately **1.68 kWh for batteries below 80% SOH** to approximately **2.51 kWh for batteries above 100% SOH**.
 - The raw SOH-energy correlation was **0.341**.
 - Overall, battery condition and charging state are associated with energy requirements, but neither variable alone explains the full variation.
+![Q4 Energy by Battery SOH](assets/Q4_energy_by_battery_soh.png)
 
 ### Q5 — Pricing & Economics
 - Revenue per completed swap increased from approximately **₹59–60** during the first half of 2024 to around **₹65 from July 2024 onward**.
@@ -141,6 +146,7 @@ The analysis addresses six key business questions:
 - Average grid tariffs were relatively similar across categories, at approximately **₹9.23–₹9.33/kWh**.
 - Therefore, variation in **energy consumption** was a more important driver of energy-cost variation than tariff differences.
 - The available data does not support treating the calculated contribution-margin proxy as formal accounting profit.
+![Q5 Energy Cost by Tariff](assets/Q5_energy_cost_by_tariff.png)
 
 ### Q6 — Rider Retention & Engagement
 - **2W riders** averaged approximately **191 completed swaps**, compared with approximately **131 for 3W riders**.
@@ -151,7 +157,7 @@ The analysis addresses six key business questions:
 - KYC status also showed only a modest difference in completion performance.
 - Overall, the observed engagement differences were more pronounced across **vehicle type and commercial/onboarding characteristics** than across demographic characteristics.
 - These findings represent **associations in observed rider activity, not causal effects**.
-
+![Q6 Completed Swaps by Vehicle Class](assets/Q6_completed_swaps_by_vehicle_class.png)
 ---
 
 
